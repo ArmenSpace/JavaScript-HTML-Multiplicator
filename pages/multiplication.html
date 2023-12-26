@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Multiplication</title>
+    <script src="../js/multiplication.js"></script>
+</head>
+<body>
+<table align="center" bgcolor="#dcdcdc" border="1" class="table" width="30%">
+    <th colspan="3"> Multiplicator</th>
+    <tr>
+        <td align="center">
+            <input id="textField" type="text">
+            <div align="center"> X</div>
+            <input id="textField2" type="text">
+        </td>
+    </tr>
+    <tr>
+        <td align="center">
+            <input id="generate" onclick="generate()" type="button" value="Generate">
+        </td>
+    </tr>
+    <tr>
+        <td align="center">
+            <div align="right" style="padding: 5px">
+                <span>Max Tries: <span id="maxTries"></span></span>
+            </div>
+            <p>Type Answer</p>
+            <input id="textFieldChecked" type="text">
+            <p><input id="check" onclick="check()" type="button" value="Check"></p>
+            <p><textarea cols="26" id="textFinal" rows="1"></textarea></p>
+        </td>
+    </tr>
+    <tr>
+        <td align="center">
+            <input id="reset" onclick="reset()" type="button" value="Reset">
+        </td>
+    </tr>
+</table>
+<div align="center">
+    <img alt="img" height="100" id="image" width="200"/>
+</div>
+</body>
+</html>
